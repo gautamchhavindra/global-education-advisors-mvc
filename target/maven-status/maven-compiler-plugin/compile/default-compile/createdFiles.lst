@@ -1,0 +1,4 @@
+com\globaledu\GlobalEduApplication.class
+com\globaledu\model\User.class
+com\globaledu\controller\MainController.class
+com\globaledu\model\Lead.class
