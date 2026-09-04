@@ -42,7 +42,7 @@ public class MainController {
                 "SELECT COUNT(*) FROM users WHERE email_address = ?",
                 Integer.class, "chhavindra.gautam@gmail.com");
         if (count == null || count == 0) {
-            String hashedPassword = BCrypt.hashpw("D1o2o3n4@5", BCrypt.gensalt());
+            String hashedPassword = BCrypt.hashpw("J1a2m3u4@5", BCrypt.gensalt());
             jdbcTemplate.update("INSERT INTO users (user_name, email_address, password) VALUES (?, ?, ?)",
                     "chhavindra", "chhavindra.gautam@gmail.com", hashedPassword);
         }
